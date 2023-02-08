@@ -13,7 +13,19 @@ public class CauseUncheckedException {
      * Notice that errors are separate from exceptions. Errors are external to Java and can occur when some external
      * event happens, like running out of computer memory.
      */
-    public void throwUncheckedException(){
+    public void throwUncheckedException() {
+
+        int num = 1;
+        int num1 = 0;
+        int result = num/num1;
+        System.out.println("The result will throw an exception" + result);
+
+    }
+
+    public static void main(String[] args){
+
+        CauseUncheckedException display = new CauseUncheckedException();
+        display.throwUncheckedException();
 
     }
 }
